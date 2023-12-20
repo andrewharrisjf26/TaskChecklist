@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+#app-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #333;
+}
+
+#task-input-container,
+#task-list-container,
+#history-container {
+    margin-bottom: 20px;
+}
+
+#task-list-container,
+#history-container {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.history-section {
+    margin-top: 10px;
+}
+
+.history-section h3 {
+    color: #555;
+}
+
+#completed-list,
+#not-completed-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#completed-list li,
+#not-completed-list li {
+    background-color: #dff0d8; /* Bootstrap success background color */
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.task-item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.task-item.completed {
+    background-color: #e0e0e0;
+}
+
+.task-item.dark-mode {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+.task-item.dark-mode.completed {
+    background-color: #555555;
+}
+
+.task-item span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.task-item button {
+    background-color: #5bc0de; /* Bootstrap info button color */
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px; /* Added margin-bottom */
+}
+
+.task-item button:hover {
+    background-color: #46b8da; /* Bootstrap info button color on hover */
+}
+
+button {
+    background-color: #d9534f; /* Bootstrap danger button color */
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #c9302c; /* Bootstrap danger button color on hover */
+}
+
+#mode-toggle-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #ffffff;
+}
+
+#mode-toggle {
+    margin-left: 10px;
+    cursor: pointer;
+}

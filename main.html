@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Task Checklist</title>
+</head>
+
+<body>
+
+  <div id="app-container">
+    <h1>Task Checklist</h1>
+
+    <!-- Task Input Section -->
+    <div id="task-input-container">
+      <input type="text" id="new-task-input" placeholder="Add a new task...">
+      <input type="date" id="due-date-input">
+      <input type="time" id="due-time-input">
+      <label for="prioritize-checkbox">Prioritize</label>
+      <input type="checkbox" id="prioritize-checkbox">
+      <button onclick="addTask()">Add Task</button>
+      <button onclick="clearTasks()">Clear Completed</button>
+    </div>
+
+    <!-- Task List Section -->
+    <div id="task-list-container">
+      <h2>Task List</h2>
+      <ul id="task-list"></ul>
+    </div>
+
+    <!-- History Section -->
+    <div id="history-container">
+      <h2>History</h2>
+      <div id="completed-tasks" class="history-section">
+        <h3>Completed Tasks</h3>
+        <ul id="completed-list"></ul>
+      </div>
+      <div id="not-completed-tasks" </ul>
+      </div>
+      <button onclick="clearHistory()">Clear History</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
